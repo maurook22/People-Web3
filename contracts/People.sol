@@ -37,7 +37,6 @@ contract People {
 
     }
 
-    //probar el require si al modificar con distintos usuarios salta (cuando este el front)
     function updatePerson(uint256 _id, uint256 _dni, string memory _name, string memory _lastName, string memory _location, uint256 _gender, uint256 _birth) public {
 
         //require(owner == msg.sender); 
