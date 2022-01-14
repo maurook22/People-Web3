@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>DApp</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!--???-->
+
+            <!--Form-->
+            <div class="col-sm">
+
+                <form id="peopleForm" data-id="" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-2" id="name" aria-describedby="nameHelp"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-2" id="lastName" placeholder="Enter last name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-2" id="dni" placeholder="Enter dni">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-2" id="location" placeholder="Enter location">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-select mb-2" id="gender">
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control mb-2" id="birth" placeholder="Enter your birth">
+                    </div>
+                    <button type="submit" class="btn btn-success mt-3">Create</button>
+                    <button id="upd" type="button" class="btn btn-primary mt-3">Update</button>
+                    <button id="res" type="button" class="btn btn-warning mt-3">Reset Form</button>
+                </form>
+
+            </div>
+
+            <!--List-->
+            <div class="col-sm">
+                <div class="user-dashboard-info-box table-responsive mb-0 bg-white p-4 shadow-sm">
+                    <table class="table manage-candidates-top mb-0">
+                        <thead>
+                            <tr>
+                                <th>Candidate Name</th>
+                                <th class="text-center">Location</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts -->
+    <script src="./libs/@truffle/contract/dist/truffle-contract.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/ui.js"></script>    
+
+</body>
+
+</html>
