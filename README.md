@@ -1,4 +1,1 @@
-Solidity
-
-CRUD ejemplo web3.
-
+Simple example of a CRUD made with Solidity.
